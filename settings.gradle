@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://nexusmobile.fawrystaging.com:2597/repository/maven-public/' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://nexusmobile.fawrystaging.com:2597/repository/maven-public/' }
+    }
+}
+rootProject.name = "SDK Demo"
+include ':app'
+
+
