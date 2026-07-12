@@ -1,4 +1,5 @@
 
+
 # 
 
 # **FawryPay-AVL android SDK**
@@ -15,7 +16,7 @@ Use this integration if you want your Android application to:
 Make sure you have an active FawryPay account, or [**create an account**](https://atfawry.fawrystaging.com/merchant/register).
 
 
-### **How Android SDK Looks Like**
+### **How Android AVL Flow Looks Like**
 <img width="300" alt="shared image (4)" src="https://github.com/user-attachments/assets/c683ae4e-0b47-4ab4-865e-9a3dd2cf7a5c" />
 
 [**Download**](https://drive.google.com/drive/folders/1T__IkSKiM21zHcpeGfKF0xTQNCE6YtKk) and test our sample application.
@@ -254,7 +255,7 @@ Use this integration if you want your android application to
 
 Make sure you have an active FawryPay account or [**create an account**](https://atfawry.fawrystaging.com/merchant/register).
 
-## **How Android SDK Looks Like**
+## **How Android Anonymous Flow Looks Like**
 
 <img src="https://github.com/user-attachments/assets/c42a82ae-335e-497a-9b8b-094a6414ac85" width="250" height="400"/>
 <img src="https://github.com/user-attachments/assets/d26fc52a-f063-4d4c-898b-e581778a86f2" width="250" height="400"/>
@@ -263,51 +264,7 @@ Make sure you have an active FawryPay account or [**create an account**](https:/
 
 [**Download**](https://github.com/FawryPay/Android-Fawrypay-Anonymous-sample) and test our sample application.
 
-## **How it works**
-
-<img src="https://raw.githubusercontent.com/FawryPay/Android-Fawrypay-Anonymous-sample/master/Docs/4.jpg" width="900"/>
-
-On this page we will walk you through Android SDK integration steps:
-
-1.  Installing **FawryPaySDK**.
-2.  Initialize and Configure **FawryPay** Android SDK.
-3.  Override the SDK colors.
-4.  Present Payment options.
-5.  Return payment processing information and inform your client of the payment result.
-
-# **Step 1: Installing FawryPaySDK**
-
-This document illustrates how our gateway can be integrated within your android application in simple and easy steps. Please follow the steps in order to integrate the FawryPay android SDK in your application.
-
-1.  Add the following repository to your (root) <code>build.gradle</code><br/> 
-``` groovy
-repositories 
-{ 
-  ...
-  jcenter() 
-  maven { url 'https://nexusmobile.fawrystaging.com:2597/repository/maven-public/' } 
-}
-```
-2.  And add the following to your (app) <code>build.gradle</code> and make sure you are using our [Latest Version](https://github.com/FawryPay/Android-Fawrypay-Anonymous-sample/tags) <br/> 
-``` groovy 
-dependencies 
-{ 
-  ... 
-  implementation 'com.fawry.fawrypay:anonymous-avl:2.0.0' 
-} 
-```
-
-3.  Add the following to your <code>Manifest.xml</code><br/> 
-``` groovy 
-\<application ... tools:replace="android:allowBackup" /\>
-```
-
-4.  Finally add the following property to your <code>build.properties</code><br/> 
-```
-android.enableJetifier=true
-```
-
-# **Step 2: Initialize FawryPay Android SDK**
+# **Step 1: Initialize FawryPay Android SDK**
 
 1.  Create an instance of
 2.  LaunchCustomerModel
@@ -388,7 +345,7 @@ chargeItemAccounts | ArrayList\<ChargeItemAccount> | optional (used in split pay
 <img width="940" height="695" alt="image" src="https://github.com/user-attachments/assets/fb3dd298-8ae4-4756-a874-cee016788b4b" />
 
 
-# **Step 3: Override the SDK colors**
+# **Step 2: Override the SDK colors**
 
 If you want to change colors:
 
