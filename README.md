@@ -29,8 +29,6 @@ Make sure you have an active FawryPay account, or [create an account](https://at
 
 <img src="https://github.com/FawryPay/Android-Fawrypay-Anonymous-sample/blob/master/Docs/4.jpg" width="900"/>
 
-<img src="https://github.com/FawryPay/Android-Fawrypay-AVL-sample/blob/master/Docs/3.png" width="900"/>
-
 This guide walks you through the Android SDK integration steps:
 
 1. Installing FawryPay SDK
