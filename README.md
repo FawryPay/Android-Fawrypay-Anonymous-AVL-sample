@@ -406,6 +406,3 @@ There are 2 callbacks:
 
 1. **`onFailure(error: FawryPayError)`**
    - Called if initialization of the flow fails.
-
-2. **`onSuccess(message: String)`**
-   - Not used in this flow.
